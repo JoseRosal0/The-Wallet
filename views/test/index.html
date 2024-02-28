@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+        <form action="" id="form"
+            class="bg-gray-200 border-2 border-slate-600 w-72 h-80 mx-auto 
+            mt-5 pt-3 rounded-lg grid grid-rows-6" action="">
+            <!-- border-none outline-none-->
+            <!--Texto Header-->
+            <div class="justify-self-center"><h2>Crea tarjeta</h2></div>
+
+            
+
+            <!--Nombre de cuenta-->
+            <div id="" class="flex items-center border-b-2 border-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 ml-5 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                </svg>
+
+                <input id="name" class="bg-gray-200 h-6" 
+                placeholder="Nombre de la cuenta" type="text">
+            </div>
+
+            <!--Categoria-->
+            <div class="flex items-center border-b-2 border-gray-400 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                class="w-6 h-6 ml-5 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                  </svg>
+                  
+                <select class="bg-gray-200 text-center"
+                name="" id="categoria">
+                    <option value="">Seleccione categoria</option>
+                    <option value="Dinero en efectivo">Dinero en efectivo</option>
+                    <option value="Cuenta corriente">Cuenta corriente</option>
+                    <option value="Cuenta de ahoro">Cuenta de ahoro</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <!--Saldo de la cuenta-->
+
+            <div class="flex items-center border-b-2 border-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                class="w-6 h-6 ml-5 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  
+                <input id="saldo" class="bg-gray-200"
+                placeholder="Saldo inicial" type="number">
+            </div>
+
+            <!--Checkbox-->
+
+            <div class="flex items-center border-b-2 border-gray-400">
+                <input id="checkbox-form" 
+                class="accent-green-500 w-5 h-5 ml-5 mr-3" 
+                type="checkbox">
+                <p>Inclur cuenta en saldo total</p>
+            </div>
+
+            <!--Botones-->
+            <div class="flex justify-center">
+               <button class=" h-8 w-20 text-yellow-900" id="cancel">Cancelar</button>
+               <button class="bg-yellow-900 h-8 w-20 btn text-white text-xs rounded-full ">Guardar</button>
+            </div> 
+        </form>
+    <script src="test.js"></script>
+</body>
+</html>
