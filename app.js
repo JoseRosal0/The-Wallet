@@ -14,9 +14,10 @@ const tarjetaRouter = require("./controller/tarjetas");
     }
 })();
 //rutas de frontend
-app.use("/",express.static(path.resolve("views", "home")));
-app.use("/test",express.static(path.resolve("views", "test")));
+app.use("/",express.static(path.resolve("views", "work")));
+app.use("/form",express.static(path.resolve("views", "form")));
 app.use("/imagen",express.static(path.resolve("img")));
+app.use("/output",express.static(path.resolve("views")));
 //importante
 app.use(express.json());
 //rutas de backend

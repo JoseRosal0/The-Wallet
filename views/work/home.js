@@ -6,7 +6,7 @@ var divRaiz=document.getElementById("div-raiz")
 
 
 plusBtn.addEventListener("click",()=>{
-    window.location.href="/test"
+    window.location.href="/form"
    
 
     
