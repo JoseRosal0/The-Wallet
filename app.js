@@ -16,6 +16,7 @@ const tarjetaRouter = require("./controller/tarjetas");
 //rutas de frontend
 app.use("/",express.static(path.resolve("views", "work")));
 app.use("/form",express.static(path.resolve("views", "form")));
+app.use("/home",express.static(path.resolve("views", "home")));
 app.use("/imagen",express.static(path.resolve("img")));
 app.use("/output",express.static(path.resolve("views")));
 //importante
