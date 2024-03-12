@@ -212,12 +212,33 @@
     </div>
       <!--este es el main-->
     <main class="">
-        <div class="edit h-96 sm:h-500px md:h-500px lg:h-500px xl:h-700px">
+        <div class="edit absolute h-96 flex flex-col justify-center items-center
+        text-white
+        sm:h-500px 
+        md:h-500px lg:h-500px xl:h-700px">
           <!-- Contenido del div con la imagen de fondo -->
-          <div class="">
-            <h1 class="">Organize your finances on a single page</h1>
-            <h2>Use The wallet online</h2>
-            <button>Start</button>
+          
+            <section class="inline-block align-middle">
+              <h1 class="text-4xl">Organize your finances on a single page</h1>
+
+            </section>
+            <div class="flex">
+              <input class="border-2-black" type="text">
+
+              <button class="rounded-md text-center bg-teal-600 
+              px-5 py-2.5 text-lg font-medium text-white shadow
+              flex ml-4"
+              >
+                <p>Get started</p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  
+                </span>
+              </button>
+            
+            
           </div>
          
       </div>
@@ -236,6 +257,11 @@
             width: 100%;
             
             
+          }
+          .aling1{
+            display: flex;
+            
+            align-items: center;
           }
       </style>
       <script src="home.js"></script>
